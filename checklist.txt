@@ -21,3 +21,4 @@
 - capability for multiple database connections? (needs to be looked into)
 - return something other than mysqli_results? (needs to be looked into)
 - querying a single value and returning just that value instead of the mysqli_results (needs to be done)
+- Read Only Transactions (needs to be done)
