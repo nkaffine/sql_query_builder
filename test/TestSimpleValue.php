@@ -12,7 +12,7 @@
         private $actual;
 
         /**
-         * Test constructor.
+         * test constructor.
          *
          * @param $expected mixed the expected value of the test.
          * @param $actual mixed the actual value of the test.

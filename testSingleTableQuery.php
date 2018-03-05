@@ -152,7 +152,7 @@
         $query->generateQuery()));
     echo $testing->runTests();
     //Testing order
-    echo "<br>Test Order<br>";
+    echo "<br>test Order<br>";
     $testing = Testing::newTesting();
     $query = new SelectQuery("users", "user_id", "first", "last");
     $query->order(OrderStatement::orderDesc("user_id"));

@@ -38,7 +38,7 @@
         public function runTests() {
             $results = "";
             for ($i = 0; $i < sizeof($this->tests); $i++) {
-                $results .= "Test " . ($i + 1) . ": " . $this->tests[$i]->runTest() . "<br>";
+                $results .= "test " . ($i + 1) . ": " . $this->tests[$i]->runTest() . "<br>";
             }
             return $results;
         }

@@ -23,21 +23,34 @@
      * Time: 10:48 AM
      */
     class SelectQuery implements ISelectQuery {
-        protected $table;
+        /**
+         * @var string[] the tables in the query.
+         */
+        protected $tables;
+        /**
+         * @var string[] the parameters in the query.
+         */
         protected $parameters;
         /**
-         * @var IWhere
+         * @var IWhere the where statement for the query.
          */
         protected $where;
         /**
-         * @var IOrder
+         * @var IOrder the order statement for the query.
          */
         protected $order;
+        /**
+         * @var int the max number of rows returned by the select query.
+         */
         protected $limit;
         /**
-         * @var IGroupBy
+         * @var IGroupBy the group by clause of the query
          */
         protected $groupBY;
+        /**
+         * @var
+         */
+        protected $having;
 
         /**
          * SelectQuery constructor.
@@ -54,7 +67,6 @@
             }
             $this->table = $table;
             $this->parameters = $parameters;
-            $this->joins = array();
         }
 
         /**
