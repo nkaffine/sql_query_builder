@@ -12,7 +12,7 @@
         private $table;
         private $alias;
 
-        private function __construct($table) {
+        public function __construct($table) {
             if ($table === null) {
                 throw new InvalidArgumentException("Table cannot be null");
             }
@@ -28,7 +28,7 @@
             if ($this->alias === null) {
                 return $this->table;
             } else {
-                return $this->table . $this->alias;
+                return $this->table . " " . $this->alias;
             }
         }
 
